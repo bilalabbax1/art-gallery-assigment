@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} 
+html{
+    font-size: 62.5%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Outfit", sans-serif;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    font-weight: 300;
+    color: #151515;
+    background-color: #ffffff;
+}
+h1{
+    font-family: "Big Shoulders Display", cursive;
+    font-weight: 900;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    white-space: pre-line;
+}
+
+h1 {
+    font-size: 5.8rem;
+    line-height: 5rem;
+}
+.top {
+    display: flex;
+    flex-direction: column;
+}
+.wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 768px;
+}
+.container {
+    padding: 0 1em;
+}
+.top__hero {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 100%;
+    z-index: -5;
+}
+.black_white {
+    margin: 0.5em 0;
+    position: absolute;
+    left: 0;
+    mix-blend-mode: difference;
+    color: #ffffff;
+}
