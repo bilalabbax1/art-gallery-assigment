@@ -210,3 +210,27 @@ footer p {
     width: 38.7%;
 }
 
+.social-icons-list {
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons-list > li {
+    padding-left: 20px;
+}
+
+.svg-social-icons-white{
+    fill: var(--white-color);
+}
+
+#fb-icon-svg-brown:hover {
+    fill: var(--brown-color);
+}
+
+#ig-icon-svg-brown:hover {
+    fill: var(--brown-color);
+}
+
+#tw-icon-svg-brown:hover {
+    fill: var(--brown-color);
+}
