@@ -1,39 +1,36 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Art Gallery Assignment</title>
-        <link
-        href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Outfit:wght@300&display=swap"
-        rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="./css/main.css">
-    </head>
-    <body>
-        <section class="top wrapper">
-            <picture>
-                <source media="min-width: 768px" srcset="./img/tablet/image1@2x.jpg">
-                <img src="./img/mobile/image1@2x.jpg" alt="Mobile Sized Picture" class="top__hero">
-            </picture>
-            <div class="container">
-                <h1 class="top__title">Modern 
-                    Art Gallery</h1>
-                <p class="top__text">
-                    The arts in the collection of the Modern Art Gallery all started from a spark of
-          inspiration.
-          Will these pieces inspire you? Visit us and find out.
-                </p>
-                <a href="./location.html" class="top__action action action-primary">Our location</a>
-            </div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "css/main.css">    
+    <title>Art Gallery Assignment</title>
+  </head>
 
-        </section>
-        <section>
+  <body>
+    <header>
+      <div class = "black-block" id = "right-header-block"></div>
+      <img id = "header-img" 
+        srcset = "img/desktop/image-hero.jpg 1280w"
+        sizes = "(max-width: 1280px) 1280px"
+        src = "img/desktop/image-hero.jpg" alt = "First Div Picture">
 
-        </section>
-        <section>
+      <h1 class = "pre-lines">MODERN 
+        ART GALLERY</h1>
+      <p id = "header-paragraph">
+        The arts in the collection of the Modern Art Gallery all started 
+        from a spark of inspiration. Will these pieces inspire you? Visit 
+        us and find out.
+      </p>
+      <a id = "location-button" class = "button-block black-block" href = "location.html">
+        <p class = "button-text">
+          OUR LOCATION
+        </p>
+        <div class = "button-arrows">
+          <img class = "button-img" src = "img/icon-arrow-right.svg" alt = "">
+        </div>
+      </a>
+    </header>
 
-        </section>
-    </body>
+  </body>
 </html>
