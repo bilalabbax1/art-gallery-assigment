@@ -20,6 +20,22 @@ body {
     color: var(--black-color);
 }
 
+.pre-lines {
+    white-space: pre-line;
+}
+
+.black-block {
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-right: 11.45%;
+    line-height: 0;
+}
 p {
     line-height: 1.45rem;
 }
@@ -58,25 +74,6 @@ h4 {
     line-height: 1.64rem;
 }
 
-.pre-lines {
-    white-space: pre-line;
-}
-
-.black-block {
-    background-color: var(--black-color);
-    color: var(--white-color);
-}
-
-/*HEADER*/
-
-header {
-    position: relative;
-    top: 0;
-    left: 0;
-    margin-right: 11.45%;
-    line-height: 0;
-}
-
 #right-header-block {
     position: absolute;
     top: 0;
@@ -97,8 +94,6 @@ header {
     top: 190px;
     width: 15.9rem;
 }
-
-/*BUTTON*/
 
 .button-arrows {
     background-color: var(--brown-color);
@@ -142,7 +137,64 @@ header {
     background-color: var(--brown-color);
 }
 
+.grid-container {
+    padding: 180px 11.45%;
+    display: grid;
+    width: 77%;
+    grid-template-areas: 
+        "first-grid-article first-grid-img first-grid-img"
+        "second-grid-img  second-grid-img third-grid-img"
+        "second-grid-img  second-grid-img last-grid-article";
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 40% 14% 40%;
+    gap: 30px;
+}
 
+#first-grid-article {
+    grid-area: first-grid-article;
+    width: 100%;
+    height: 100%;
+}
+
+#first-grid-article h3 {
+    margin: 30px 95px 32px 0;
+}
+
+#first-grid-article p{
+    margin: 0 95px 60px 0;
+}
+
+#first-grid-img {
+    grid-area: first-grid-img;
+    width: 100%;
+    height: 100%;
+}
+
+#second-grid-img {
+    grid-area: second-grid-img;
+    width: 100%;
+    height: 100%;
+}
+
+#third-grid-img {
+    grid-area: third-grid-img;
+    width: 100%;
+    height: 100%;
+}
+
+#last-grid-article {
+    grid-area: last-grid-article;
+    width: 100%;
+    height: 100%;
+}
+
+#last-grid-article h3 {
+    margin: 65px 48px 32px 48px;
+}
+
+#last-grid-article p {
+    margin: 0 48px 64px 48px;
+}
 
 /*FOOTER*/
 
