@@ -9,84 +9,23 @@
         rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <style>
-            *,
-            *::before,
-            *::after {
-                box-sizing: border-box;
-                margin: 0;
-                padding: 0;
-            } 
-            html{
-                font-size: 62.5%;
-            }
-            body{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                font-family: "Outfit", sans-serif;
-                font-size: 1.8rem;
-                line-height: 2.8rem;
-                font-weight: 300;
-                color: #151515;
-                background-color: #ffffff;
-            }
-            h1{
-                font-family: "Big Shoulders Display", cursive;
-                font-weight: 900;
-                letter-spacing: 0.02em;
-                text-transform: uppercase;
-                white-space: pre-line;
-            }
-
-            h1 {
-                font-size: 5.8rem;
-                line-height: 5rem;
-            }
-            .top {
-                display: flex;
-                flex-direction: column;
-            }
-            .wrapper {
-                position: relative;
-                width: 100%;
-                max-width: 768px;
-            }
-            .container {
-                padding: 0 1em;
-            }
-            .top__hero {
-                width: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: auto;
-                height: 100%;
-                z-index: -5;
-            }
-            .black_white {
-                margin: 0.5em 0;
-                position: absolute;
-                left: 0;
-                mix-blend-mode: difference;
-                color: #ffffff;
-            }
-        </style>
+        <link rel="stylesheet" href="./css/main.css">
     </head>
     <body>
         <section class="top wrapper">
             <picture>
                 <source media="min-width: 768px" srcset="./img/tablet/image1@2x.jpg">
-                <img src="./img/mobile/image1@2x.jpg" alt="Mobile Sized Picture" class="main_picture">
+                <img src="./img/mobile/image1@2x.jpg" alt="Mobile Sized Picture" class="top__hero">
             </picture>
             <div class="container">
-                <h1 class="black_white">Modern 
+                <h1 class="top__title">Modern 
                     Art Gallery</h1>
-                <p>
+                <p class="top__text">
                     The arts in the collection of the Modern Art Gallery all started from a spark of
           inspiration.
           Will these pieces inspire you? Visit us and find out.
                 </p>
+                <a href="./location.html" class="top__action action action-primary">Our location</a>
             </div>
 
         </section>
